@@ -18,7 +18,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public final class ExtensionLoader<T> {
 
-    private static final String SERVICE_DIRECTORY = "META-INF/extensions/";
+    private static final String SERVICE_DIRECTORY = "extensions/";
     private static final Map<Class<?>, ExtensionLoader<?>> EXTENSION_LOADERS = new ConcurrentHashMap<>();
     private static final Map<Class<?>, Object> EXTENSION_INSTANCES = new ConcurrentHashMap<>();
 
