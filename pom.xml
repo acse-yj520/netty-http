@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <artifactId>netty-rpc</artifactId>
+
+  <build>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <configuration>
+          <encoding>${encoding}</encoding>
+          <source>${maven.compiler.source}</source>
+          <target>${maven.compiler.target}</target>
+        </configuration>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>3.8.1</version>
+      </plugin>
+      <plugin>
+        <artifactId>maven-checkstyle-plugin</artifactId>
+        <configuration>
+          <configLocation>config/checkstyle.xml</configLocation>
+        </configuration>
+        <executions>
+          <execution>
+            <goals>
+              <goal>check</goal>
+            </goals>
+          </execution>
+        </executions>
+        <groupId>org.apache.maven.plugins</groupId>
+        <version>${checkstyle-maven-plugin.version}</version>
+      </plugin>
+    </plugins>
+  </build>
+  <dependencies>
+    <!-- lombok -->
+    <dependency>
+      <artifactId>lombok</artifactId>
+      <groupId>org.projectlombok</groupId>
+      <scope>provided</scope>
+      <version>1.18.8</version>
+    </dependency>
+    <!-- guava -->
+    <dependency>
+      <artifactId>guava</artifactId>
+      <groupId>com.google.guava</groupId>
+      <version>${guava.version}</version>
+    </dependency>
+    <!-- log -->
+    <dependency>
+      <artifactId>slf4j-api</artifactId>
+      <groupId>org.slf4j</groupId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>slf4j-simple</artifactId>
+      <groupId>org.slf4j</groupId>
+      <version>${slf4j.version}</version>
+    </dependency>
+    <!-- test -->
+    <dependency>
+      <artifactId>junit-jupiter-engine</artifactId>
+      <groupId>org.junit.jupiter</groupId>
+      <scope>test</scope>
+      <version>${junit.jupiter.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>junit-platform-runner</artifactId>
+      <groupId>org.junit.platform</groupId>
+      <scope>test</scope>
+      <version>${junit.platform.version}</version>
+    </dependency>
+  </dependencies>
+  <groupId>com.elias</groupId>
+  <modelVersion>4.0.0</modelVersion>
+
+  <modules>
+    <module>netty-learn</module>
+    <module>rpc-common</module>
+    <module>rpc-core</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <properties>
+    <checkstyle-maven-plugin.version>3.1.1</checkstyle-maven-plugin.version>
+    <curator-version>4.2.0</curator-version>
+    <encoding>UTF-8</encoding>
+    <guava.version>29.0-jre</guava.version>
+    <junit.jupiter.version>5.5.2</junit.jupiter.version>
+    <junit.platform.version>1.5.2</junit.platform.version>
+    <kryo.version>4.0.2</kryo.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- test -->
+    <netty.version>4.1.42.Final</netty.version>
+    <slf4j.version>1.7.25</slf4j.version>
+    <!--logging-->
+    <spring.version>5.2.7.RELEASE</spring.version>
+  </properties>
+  <version>1.0-SNAPSHOT</version>
+
+</project>
