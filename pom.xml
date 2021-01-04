@@ -79,6 +79,7 @@
     <module>netty-learn</module>
     <module>rpc-common</module>
     <module>rpc-core</module>
+    <module>proxy-learn</module>
   </modules>
   <packaging>pom</packaging>
 
