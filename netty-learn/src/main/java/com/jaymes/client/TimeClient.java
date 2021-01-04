@@ -1,6 +1,6 @@
-package com.elias.client;
+package com.jaymes.client;
 
-import com.elias.handler.TimeClientHandler;
+import com.jaymes.handler.TimeClientHandler;
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

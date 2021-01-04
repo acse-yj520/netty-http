@@ -1,6 +1,6 @@
-package com.elias.server;
+package com.jaymes.server;
 
-import com.elias.handler.TimeServerHandler;
+import com.jaymes.handler.TimeServerHandler;
 import io.netty.bootstrap.ServerBootstrap;
 import io.netty.channel.ChannelFuture;
 import io.netty.channel.ChannelInitializer;

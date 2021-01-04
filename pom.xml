@@ -2,8 +2,8 @@
 <project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xmlns="http://maven.apache.org/POM/4.0.0"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <artifactId>netty-rpc</artifactId>
 
+  <artifactId>netty-rpc</artifactId>
   <build>
     <plugins>
       <plugin>
@@ -33,6 +33,34 @@
       </plugin>
     </plugins>
   </build>
+  <groupId>com.jaymes</groupId>
+  <modelVersion>4.0.0</modelVersion>
+
+  <modules>
+    <module>netty-http</module>
+    <module>netty-learn</module>
+    <module>rpc-common</module>
+    <module>rpc-core</module>
+  </modules>
+  <packaging>pom</packaging>
+
+  <properties>
+    <checkstyle-maven-plugin.version>3.1.1</checkstyle-maven-plugin.version>
+    <curator-version>4.2.0</curator-version>
+    <encoding>UTF-8</encoding>
+    <guava.version>29.0-jre</guava.version>
+    <junit.jupiter.version>5.5.2</junit.jupiter.version>
+    <junit.platform.version>1.5.2</junit.platform.version>
+    <kryo.version>4.0.2</kryo.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- test -->
+    <netty.version>4.1.42.Final</netty.version>
+    <slf4j.version>1.7.25</slf4j.version>
+    <!--logging-->
+    <spring.version>5.2.7.RELEASE</spring.version>
+  </properties>
+
   <dependencies>
     <!-- lombok -->
     <dependency>
@@ -72,33 +100,6 @@
       <version>${junit.platform.version}</version>
     </dependency>
   </dependencies>
-  <groupId>com.elias</groupId>
-  <modelVersion>4.0.0</modelVersion>
 
-  <modules>
-    <module>netty-learn</module>
-    <module>rpc-common</module>
-    <module>rpc-core</module>
-    <module>proxy-learn</module>
-  </modules>
-  <packaging>pom</packaging>
-
-  <properties>
-    <checkstyle-maven-plugin.version>3.1.1</checkstyle-maven-plugin.version>
-    <curator-version>4.2.0</curator-version>
-    <encoding>UTF-8</encoding>
-    <guava.version>29.0-jre</guava.version>
-    <junit.jupiter.version>5.5.2</junit.jupiter.version>
-    <junit.platform.version>1.5.2</junit.platform.version>
-    <kryo.version>4.0.2</kryo.version>
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
-    <!-- test -->
-    <netty.version>4.1.42.Final</netty.version>
-    <slf4j.version>1.7.25</slf4j.version>
-    <!--logging-->
-    <spring.version>5.2.7.RELEASE</spring.version>
-  </properties>
-  <version>1.0-SNAPSHOT</version>
-
+  <version>1.0</version>
 </project>
