@@ -7,16 +7,17 @@ import lombok.NoArgsConstructor;
 import lombok.Setter;
 import lombok.ToString;
 
-/**
- * @author Jaymes Yao
- * @date 2021/1/4 16:54
- */
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Setter
 @Builder
 @ToString
+/**
+ * @author Jaymes Yao
+ * @date 2021/1/4 16:54
+ */
 public class RpcServiceProperties {
 
   /**

@@ -1,8 +1,8 @@
-package loadbalance.loadbalancer;
+package com.jaymes.loadbalance.loadbalancer;
 
+import com.jaymes.loadbalance.AbstractLoadBalance;
 import java.util.List;
 import java.util.Random;
-import loadbalance.AbstractLoadBalance;
 
 /**
  * Implementation of random load balancing strategy

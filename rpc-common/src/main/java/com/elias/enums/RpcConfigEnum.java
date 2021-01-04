@@ -7,7 +7,6 @@ public enum RpcConfigEnum {
 
   private final String propertyValue;
 
-
   RpcConfigEnum(String propertyValue) {
     this.propertyValue = propertyValue;
   }

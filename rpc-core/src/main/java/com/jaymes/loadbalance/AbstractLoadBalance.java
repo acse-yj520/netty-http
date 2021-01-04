@@ -1,4 +1,4 @@
-package loadbalance;
+package com.jaymes.loadbalance;
 
 import java.util.List;
 

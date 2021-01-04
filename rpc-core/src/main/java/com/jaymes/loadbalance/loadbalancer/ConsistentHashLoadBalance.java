@@ -1,6 +1,7 @@
-package loadbalance.loadbalancer;
+package com.jaymes.loadbalance.loadbalancer;
 
 
+import com.jaymes.loadbalance.AbstractLoadBalance;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -8,7 +9,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.TreeMap;
 import java.util.concurrent.ConcurrentHashMap;
-import loadbalance.AbstractLoadBalance;
 import lombok.extern.slf4j.Slf4j;
 
 /**

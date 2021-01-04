@@ -1,4 +1,4 @@
-package registry.zk.util;
+package com.jaymes.registry.zk.util;
 
 
 import com.elias.enums.RpcConfigEnum;

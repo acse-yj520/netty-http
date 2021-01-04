@@ -1,4 +1,4 @@
-package registry;
+package com.jaymes.registry;
 
 
 import java.net.InetSocketAddress;

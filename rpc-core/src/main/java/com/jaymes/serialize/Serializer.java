@@ -1,4 +1,4 @@
-package serialize;
+package com.jaymes.serialize;
 
 
 import com.elias.extension.SPI;

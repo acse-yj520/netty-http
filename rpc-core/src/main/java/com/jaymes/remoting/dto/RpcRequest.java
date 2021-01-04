@@ -1,4 +1,4 @@
-package remoting.dto;
+package com.jaymes.remoting.dto;
 
 
 import com.elias.entity.RpcServiceProperties;

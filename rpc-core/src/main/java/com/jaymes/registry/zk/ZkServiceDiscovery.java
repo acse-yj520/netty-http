@@ -1,16 +1,16 @@
-package registry.zk;
+package com.jaymes.registry.zk;
 
 
 import com.elias.enums.RpcErrorMessageEnum;
 import com.elias.exception.RpcException;
 import com.elias.extension.ExtensionLoader;
+import com.jaymes.loadbalance.LoadBalance;
+import com.jaymes.registry.ServiceDiscovery;
+import com.jaymes.registry.zk.util.CuratorUtils;
 import java.net.InetSocketAddress;
 import java.util.List;
-import loadbalance.LoadBalance;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
-import registry.ServiceDiscovery;
-import registry.zk.util.CuratorUtils;
 
 /**
  * service discovery based on zookeeper

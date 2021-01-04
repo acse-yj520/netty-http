@@ -1,15 +1,15 @@
-package serialize.kyro;
+package com.jaymes.serialize.kyro;
 
 import com.elias.exception.SerializeException;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import com.jaymes.remoting.dto.RpcRequest;
+import com.jaymes.remoting.dto.RpcResponse;
+import com.jaymes.serialize.Serializer;
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
 import lombok.extern.slf4j.Slf4j;
-import remoting.dto.RpcRequest;
-import remoting.dto.RpcResponse;
-import serialize.Serializer;
 
 /**
  * @author Jaymes Yao

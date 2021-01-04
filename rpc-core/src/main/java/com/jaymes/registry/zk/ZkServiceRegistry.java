@@ -1,11 +1,11 @@
-package registry.zk;
+package com.jaymes.registry.zk;
 
 
+import com.jaymes.registry.ServiceRegistry;
+import com.jaymes.registry.zk.util.CuratorUtils;
 import java.net.InetSocketAddress;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.curator.framework.CuratorFramework;
-import registry.ServiceRegistry;
-import registry.zk.util.CuratorUtils;
 
 /**
  * service registration  based on zookeeper
