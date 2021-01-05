@@ -11,7 +11,6 @@ import lombok.Data;
 @Data
 @AllArgsConstructor
 public class Hello implements Serializable {
-
   private String message;
   private String description;
 }

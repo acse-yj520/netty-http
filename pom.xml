@@ -42,6 +42,9 @@
     <module>rpc-common</module>
     <module>rpc-core</module>
     <module>rpc-example</module>
+    <module>example-server</module>
+    <module>rpc-example-api</module>
+    <module>rpc-example-client</module>
   </modules>
   <packaging>pom</packaging>
 
