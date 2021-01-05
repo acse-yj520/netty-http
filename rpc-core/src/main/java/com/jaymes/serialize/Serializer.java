@@ -1,7 +1,7 @@
 package com.jaymes.serialize;
 
 
-import com.elias.extension.SPI;
+import com.jaymes.extension.SPI;
 
 /**
  * 序列化接口，所有序列化类都要实现这个接口

@@ -1,9 +1,9 @@
 package com.jaymes.registry.zk;
 
 
-import com.elias.enums.RpcErrorMessageEnum;
-import com.elias.exception.RpcException;
-import com.elias.extension.ExtensionLoader;
+import com.jaymes.enums.RpcErrorMessageEnum;
+import com.jaymes.exception.RpcException;
+import com.jaymes.extension.ExtensionLoader;
 import com.jaymes.loadbalance.LoadBalance;
 import com.jaymes.registry.ServiceDiscovery;
 import com.jaymes.registry.zk.util.CuratorUtils;

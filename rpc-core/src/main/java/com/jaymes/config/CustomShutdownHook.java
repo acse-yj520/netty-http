@@ -1,7 +1,7 @@
 package com.jaymes.config;
 
-import com.elias.utils.ThreadPoolFactoryUtils;
 import com.jaymes.registry.zk.util.CuratorUtils;
+import com.jaymes.utils.ThreadPoolFactoryUtils;
 import lombok.extern.slf4j.Slf4j;
 
 /**

@@ -1,6 +1,6 @@
 package com.jaymes.remoting.dto;
 
-import com.elias.enums.RpcResponseCodeEnum;
+import com.jaymes.enums.RpcResponseCodeEnum;
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

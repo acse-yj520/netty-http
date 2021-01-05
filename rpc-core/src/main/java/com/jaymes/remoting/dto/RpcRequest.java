@@ -1,7 +1,7 @@
 package com.jaymes.remoting.dto;
 
 
-import com.elias.entity.RpcServiceProperties;
+import com.jaymes.entity.RpcServiceProperties;
 import java.io.Serializable;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

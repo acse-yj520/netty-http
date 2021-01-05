@@ -1,7 +1,7 @@
 package com.jaymes.loadbalance;
 
 
-import com.elias.extension.SPI;
+import com.jaymes.extension.SPI;
 import java.util.List;
 
 /**

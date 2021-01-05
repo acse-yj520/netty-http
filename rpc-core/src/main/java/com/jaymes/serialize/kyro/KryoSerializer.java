@@ -1,9 +1,9 @@
 package com.jaymes.serialize.kyro;
 
-import com.elias.exception.SerializeException;
 import com.esotericsoftware.kryo.Kryo;
 import com.esotericsoftware.kryo.io.Input;
 import com.esotericsoftware.kryo.io.Output;
+import com.jaymes.exception.SerializeException;
 import com.jaymes.remoting.dto.RpcRequest;
 import com.jaymes.remoting.dto.RpcResponse;
 import com.jaymes.serialize.Serializer;

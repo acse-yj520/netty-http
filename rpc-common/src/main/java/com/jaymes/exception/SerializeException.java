@@ -1,4 +1,4 @@
-package com.elias.exception;
+package com.jaymes.exception;
 
 /**
  * @author Jaymes Yao

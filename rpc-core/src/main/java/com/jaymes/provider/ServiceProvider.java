@@ -1,12 +1,14 @@
 package com.jaymes.provider;
 
 
-import com.elias.entity.RpcServiceProperties;
+import com.jaymes.entity.RpcServiceProperties;
+import com.jaymes.extension.SPI;
 
 /**
  * @author Jaymes Yao
  * @date 2021/1/4 17:27
  */
+@SPI
 public interface ServiceProvider {
 
   /**

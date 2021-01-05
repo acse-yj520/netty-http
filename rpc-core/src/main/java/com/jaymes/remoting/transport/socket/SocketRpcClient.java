@@ -1,8 +1,8 @@
 package com.jaymes.remoting.transport.socket;
 
-import com.elias.entity.RpcServiceProperties;
-import com.elias.exception.RpcException;
-import com.elias.extension.ExtensionLoader;
+import com.jaymes.entity.RpcServiceProperties;
+import com.jaymes.exception.RpcException;
+import com.jaymes.extension.ExtensionLoader;
 import com.jaymes.registry.ServiceDiscovery;
 import com.jaymes.remoting.dto.RpcRequest;
 import com.jaymes.remoting.transport.ClientTransport;

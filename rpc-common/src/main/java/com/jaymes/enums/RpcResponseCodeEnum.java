@@ -1,4 +1,4 @@
-package com.elias.enums;
+package com.jaymes.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

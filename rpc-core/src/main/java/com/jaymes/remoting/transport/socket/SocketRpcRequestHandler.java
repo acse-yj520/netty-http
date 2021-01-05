@@ -1,6 +1,6 @@
 package com.jaymes.remoting.transport.socket;
 
-import com.elias.factory.SingletonFactory;
+import com.jaymes.factory.SingletonFactory;
 import com.jaymes.remoting.dto.RpcRequest;
 import com.jaymes.remoting.dto.RpcResponse;
 import com.jaymes.remoting.handler.RpcRequestHandler;

@@ -1,7 +1,7 @@
-package com.elias.exception;
+package com.jaymes.exception;
 
 
-import com.elias.enums.RpcErrorMessageEnum;
+import com.jaymes.enums.RpcErrorMessageEnum;
 
 /**
  * @author shuang.kou

@@ -1,6 +1,7 @@
 package com.jaymes.registry;
 
 
+import com.jaymes.extension.SPI;
 import java.net.InetSocketAddress;
 
 /**
@@ -10,6 +11,7 @@ import java.net.InetSocketAddress;
  * @createTime 2020年06月01日 15:16:00
  */
 
+@SPI
 public interface ServiceDiscovery {
 
   /**

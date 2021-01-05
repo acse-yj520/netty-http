@@ -1,4 +1,4 @@
-package com.elias.entity;
+package com.jaymes.entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

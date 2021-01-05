@@ -1,4 +1,4 @@
-package com.elias.extension;
+package com.jaymes.extension;
 
 import static java.nio.charset.StandardCharsets.UTF_8;
 
@@ -13,7 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 import lombok.extern.slf4j.Slf4j;
 
 /**
- * refer to dubbo spi: https://dubbo.apache.org/zh-cn/docs/source_code_guide/dubbo-spi.html
+ * refer to dubbo spi: https://dubbo.apache.org/zh/docs/v2.7/dev/spi/
  */
 @Slf4j
 public final class ExtensionLoader<T> {

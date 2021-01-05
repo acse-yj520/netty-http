@@ -1,4 +1,4 @@
-package com.elias.utils;
+package com.jaymes.utils;
 
 import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import java.util.Map;

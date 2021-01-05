@@ -41,6 +41,7 @@
     <module>netty-learn</module>
     <module>rpc-common</module>
     <module>rpc-core</module>
+    <module>rpc-example</module>
   </modules>
   <packaging>pom</packaging>
 

@@ -1,8 +1,8 @@
 package com.jaymes.registry.zk.util;
 
 
-import com.elias.enums.RpcConfigEnum;
-import com.elias.utils.PropertiesFileUtil;
+import com.jaymes.enums.RpcConfigEnum;
+import com.jaymes.utils.PropertiesFileUtil;
 import java.util.List;
 import java.util.Map;
 import java.util.Properties;

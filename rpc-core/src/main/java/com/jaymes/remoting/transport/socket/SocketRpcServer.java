@@ -1,11 +1,12 @@
 package com.jaymes.remoting.transport.socket;
 
-import com.elias.entity.RpcServiceProperties;
-import com.elias.factory.SingletonFactory;
-import com.elias.utils.ThreadPoolFactoryUtils;
 import com.jaymes.config.CustomShutdownHook;
+import com.jaymes.config.GlobalConfig;
+import com.jaymes.entity.RpcServiceProperties;
+import com.jaymes.factory.SingletonFactory;
 import com.jaymes.provider.ServiceProvider;
 import com.jaymes.provider.ServiceProviderImpl;
+import com.jaymes.utils.ThreadPoolFactoryUtils;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.InetSocketAddress;
@@ -20,8 +21,6 @@ import lombok.extern.slf4j.Slf4j;
  */
 @Slf4j
 public class SocketRpcServer {
-
-  private final Integer PORT = 9998;
   private final ExecutorService threadPool;
   private final ServiceProvider serviceProvider;
 
@@ -44,7 +43,7 @@ public class SocketRpcServer {
   public void start() {
     try (ServerSocket server = new ServerSocket()) {
       String host = InetAddress.getLocalHost().getHostAddress();
-      server.bind(new InetSocketAddress(host, PORT));
+      server.bind(new InetSocketAddress(host, GlobalConfig.TRANSPORT_PORT));
       CustomShutdownHook.getCustomShutdownHook().clearAll();
       Socket socket;
       while ((socket = server.accept()) != null) {
