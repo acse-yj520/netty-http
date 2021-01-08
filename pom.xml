@@ -18,21 +18,6 @@
         <groupId>org.apache.maven.plugins</groupId>
         <version>3.8.1</version>
       </plugin>
-      <plugin>
-        <artifactId>maven-checkstyle-plugin</artifactId>
-        <configuration>
-          <configLocation>config/checkstyle.xml</configLocation>
-        </configuration>
-        <executions>
-          <execution>
-            <goals>
-              <goal>check</goal>
-            </goals>
-          </execution>
-        </executions>
-        <groupId>org.apache.maven.plugins</groupId>
-        <version>${checkstyle-maven-plugin.version}</version>
-      </plugin>
     </plugins>
   </build>
 
@@ -42,9 +27,6 @@
     <module>rpc-common</module>
     <module>rpc-core</module>
     <module>rpc-example</module>
-    <module>example-server</module>
-    <module>rpc-example-api</module>
-    <module>rpc-example-client</module>
   </modules>
   <packaging>pom</packaging>
 

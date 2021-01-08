@@ -7,8 +7,14 @@
     <dependency>
       <artifactId>rpc-example-api</artifactId>
       <groupId>com.jaymes</groupId>
-      <scope>compile</scope>
       <version>${project.version}</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <artifactId>rpc-core</artifactId>
+      <groupId>com.jaymes</groupId>
+      <version>${project.version}</version>
+      <scope>compile</scope>
     </dependency>
   </dependencies>
 

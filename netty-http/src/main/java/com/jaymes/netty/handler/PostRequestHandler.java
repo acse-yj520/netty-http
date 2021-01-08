@@ -21,7 +21,6 @@ public class PostRequestHandler implements RequestHandler {
       throw new IllegalArgumentException(
           "only receive application/json type data");
     }
-
   }
 
   private String getContentType(HttpHeaders headers) {

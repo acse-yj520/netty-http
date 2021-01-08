@@ -8,7 +8,6 @@ import com.jaymes.remoting.transport.socket.SocketRpcClient;
 import com.jaymes.service.Hello;
 import com.jaymes.service.HelloService;
 
-
 /**
  * @author Jaymes Yao
  * @date 2021/1/4 22:06

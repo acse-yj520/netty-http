@@ -15,6 +15,12 @@
       <groupId>org.apache.curator</groupId>
       <version>4.2.0</version>
     </dependency>
+    <!-- netty -->
+    <dependency>
+      <artifactId>netty-all</artifactId>
+      <groupId>io.netty</groupId>
+      <version>${netty.version}</version>
+    </dependency>
     <dependency>
       <artifactId>rpc-common</artifactId>
       <groupId>com.jaymes</groupId>
