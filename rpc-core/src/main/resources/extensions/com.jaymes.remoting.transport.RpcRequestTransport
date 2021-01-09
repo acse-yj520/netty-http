@@ -1,0 +1,2 @@
+netty=com.jaymes.remoting.transport.netty.client.NettyRpcRequest
+socket=com.jaymes.remoting.transport.socket.SocketRpcRequest

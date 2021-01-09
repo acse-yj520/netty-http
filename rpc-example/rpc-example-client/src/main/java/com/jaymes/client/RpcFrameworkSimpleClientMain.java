@@ -3,8 +3,8 @@ package com.jaymes.client;
 
 import com.jaymes.entity.RpcServiceProperties;
 import com.jaymes.proxy.RpcClientProxy;
-import com.jaymes.remoting.transport.ClientTransport;
-import com.jaymes.remoting.transport.socket.SocketRpcClient;
+import com.jaymes.remoting.transport.RpcRequestTransport;
+import com.jaymes.remoting.transport.socket.SocketRpcRequest;
 import com.jaymes.service.Hello;
 import com.jaymes.service.HelloService;
 
@@ -15,10 +15,10 @@ import com.jaymes.service.HelloService;
 public class RpcFrameworkSimpleClientMain {
 
   public static void main(String[] args) {
-    ClientTransport clientTransport = new SocketRpcClient();
+    RpcRequestTransport rpcRequestTransport = new SocketRpcRequest();
     RpcServiceProperties rpcServiceProperties = RpcServiceProperties.builder()
         .group("test2").version("version2").build();
-    RpcClientProxy rpcClientProxy = new RpcClientProxy(clientTransport,
+    RpcClientProxy rpcClientProxy = new RpcClientProxy(rpcRequestTransport,
         rpcServiceProperties);
     HelloService helloService = rpcClientProxy.getProxy(HelloService.class);
     String hello = helloService.hello(new Hello("111", "222"));

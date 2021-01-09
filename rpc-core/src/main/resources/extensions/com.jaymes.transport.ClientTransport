@@ -1,2 +1,0 @@
-netty = com.jaymes.remoting.transport.netty.client.NettyClient
-socket = com.jaymes.remoting.transport.socket.SocketRpcClient

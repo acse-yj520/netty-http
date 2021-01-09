@@ -2,6 +2,7 @@ package com.jaymes.server;
 
 import com.jaymes.service.Hello;
 import com.jaymes.service.HelloService;
+import com.jaymes.spring.annotation.RpcService;
 import lombok.extern.slf4j.Slf4j;
 
 /**
@@ -9,6 +10,7 @@ import lombok.extern.slf4j.Slf4j;
  * @date 2021/1/5 14:43
  */
 @Slf4j
+@RpcService(group = "test1", version = "version1")
 public class HelloServiceImpl implements HelloService {
 
   static {
