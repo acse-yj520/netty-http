@@ -26,6 +26,32 @@
       <groupId>com.jaymes</groupId>
       <version>1.0</version>
     </dependency>
+
+    <!-- spring-context -->
+    <dependency>
+      <artifactId>spring-context</artifactId>
+      <groupId>org.springframework</groupId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- protostuff -->
+    <dependency>
+      <artifactId>protostuff-core</artifactId>
+      <groupId>io.protostuff</groupId>
+      <version>${protostuff.version}</version>
+    </dependency>
+    <dependency>
+      <artifactId>protostuff-runtime</artifactId>
+      <groupId>io.protostuff</groupId>
+      <version>${protostuff.version}</version>
+    </dependency>
+
+    <!-- serializable -->
+    <dependency>
+      <artifactId>kryo</artifactId>
+      <groupId>com.esotericsoftware</groupId>
+      <version>${kryo.version}</version>
+    </dependency>
   </dependencies>
 
   <modelVersion>4.0.0</modelVersion>

@@ -27,6 +27,7 @@ import java.net.InetAddress;
 import java.util.concurrent.TimeUnit;
 import lombok.SneakyThrows;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.stereotype.Component;
 
 /**
  * Server. Receive the client message, call the corresponding method according
@@ -36,7 +37,8 @@ import lombok.extern.slf4j.Slf4j;
  * @date 2021/1/8 10:44
  */
 @Slf4j
-public class NettyServer {
+@Component
+public class NettyRpcServer {
 
   private final ServiceProvider serviceProvider = SingletonFactory.getInstance(
       ServiceProviderImpl.class);

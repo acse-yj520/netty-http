@@ -5,7 +5,7 @@ import com.jaymes.exception.RpcException;
 import com.jaymes.extension.ExtensionLoader;
 import com.jaymes.registry.ServiceDiscovery;
 import com.jaymes.remoting.dto.RpcRequest;
-import com.jaymes.remoting.transport.ClientTransport;
+import com.jaymes.remoting.transport.RpcRequestTransport;
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -20,11 +20,11 @@ import lombok.extern.slf4j.Slf4j;
  */
 @AllArgsConstructor
 @Slf4j
-public class SocketRpcClient implements ClientTransport {
+public class SocketRpcRequest implements RpcRequestTransport {
 
   private final ServiceDiscovery serviceDiscovery;
 
-  public SocketRpcClient() {
+  public SocketRpcRequest() {
     this.serviceDiscovery = ExtensionLoader
         .getExtensionLoader(ServiceDiscovery.class).getExtension("zk");
   }

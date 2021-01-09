@@ -9,7 +9,7 @@ import com.jaymes.remoting.constant.RpcConstants;
 import com.jaymes.remoting.dto.RpcMessage;
 import com.jaymes.remoting.dto.RpcRequest;
 import com.jaymes.remoting.dto.RpcResponse;
-import com.jaymes.remoting.transport.ClientTransport;
+import com.jaymes.remoting.transport.RpcRequestTransport;
 import com.jaymes.remoting.transport.netty.codec.RpcMessageDecoder;
 import com.jaymes.remoting.transport.netty.codec.RpcMessageEncoder;
 import io.netty.bootstrap.Bootstrap;
@@ -37,7 +37,7 @@ import lombok.extern.slf4j.Slf4j;
  * @date 2021/1/8 10:37
  */
 @Slf4j
-public class NettyClient implements ClientTransport {
+public class NettyRpcRequest implements RpcRequestTransport {
 
   private final ServiceDiscovery serviceDiscovery;
   private final UnprocessedRequests unprocessedRequests;
@@ -45,7 +45,7 @@ public class NettyClient implements ClientTransport {
   private final Bootstrap bootstrap;
   private final EventLoopGroup eventLoopGroup;
 
-  public NettyClient() {
+  public NettyRpcRequest() {
     // initialize resources such as EventLoopGroup, Bootstrap
     eventLoopGroup = new NioEventLoopGroup();
     bootstrap = new Bootstrap();

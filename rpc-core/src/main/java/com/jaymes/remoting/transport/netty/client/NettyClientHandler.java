@@ -24,12 +24,12 @@ import lombok.extern.slf4j.Slf4j;
 public class NettyClientHandler extends ChannelInboundHandlerAdapter {
 
   private final UnprocessedRequests unprocessedRequests;
-  private final NettyClient nettyClient;
+  private final NettyRpcRequest nettyClient;
 
   public NettyClientHandler() {
     this.unprocessedRequests = SingletonFactory
         .getInstance(UnprocessedRequests.class);
-    this.nettyClient = SingletonFactory.getInstance(NettyClient.class);
+    this.nettyClient = SingletonFactory.getInstance(NettyRpcRequest.class);
   }
 
   /**

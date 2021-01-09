@@ -44,12 +44,6 @@
       <groupId>com.google.guava</groupId>
       <version>${guava.version}</version>
     </dependency>
-    <!-- serializable -->
-    <dependency>
-      <artifactId>kryo</artifactId>
-      <groupId>com.esotericsoftware</groupId>
-      <version>${kryo.version}</version>
-    </dependency>
     <!-- log -->
     <dependency>
       <artifactId>slf4j-api</artifactId>
@@ -87,6 +81,8 @@
     <netty.version>4.1.42.Final</netty.version>
     <slf4j.version>1.7.25</slf4j.version>
     <spring.version>5.2.7.RELEASE</spring.version>
+    <!-- protostuff -->
+    <protostuff.version>1.7.2</protostuff.version>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
